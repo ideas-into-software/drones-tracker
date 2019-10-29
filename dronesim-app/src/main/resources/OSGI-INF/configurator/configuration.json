@@ -1,0 +1,11 @@
+{    
+    // Global Settings
+    ":configurator:resource-version" : 1,
+    ":configurator:symbolic-name" : "io.balena.drones.dronesim-app.config",
+    ":configurator:version" : "0.0.1-SNAPSHOT", 
+    
+   // Configure simulation service
+   "io.balena.drones.service.simulation" : {
+		"dronesConfigFilePath": "/app/balena-drones.properties"
+   }
+}

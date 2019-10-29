@@ -1,0 +1,4 @@
+Include-Resource: lib
+Bundle-ClassPath: ., geocalc-0.5.7.jar
+Import-Package: \
+	*

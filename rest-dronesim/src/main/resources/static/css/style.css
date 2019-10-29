@@ -1,0 +1,165 @@
+@import url( '_normalize.css' );
+
+body {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	color: #424242;
+	background-color: #fdfdfd;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-feature-settings: "kern" 1;
+	-moz-font-feature-settings: "kern" 1;
+	-o-font-feature-settings: "kern" 1;
+	font-feature-settings: "kern" 1;
+	font-kerning: normal;
+}
+
+main {
+	display: block;
+	padding: 30px 0;
+}
+
+.wrapper {
+	max-width: -webkit-calc(800px - ( 30px * 2));
+	max-width: calc(800px - ( 30px * 2));
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+	.wrapper {
+		max-width: -webkit-calc(800px - ( 30px));
+		max-width: calc(800px - ( 30px));
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+.wrapper:after, .footer-col-wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.app-header {
+	border-bottom: 1px dashed #e8e8e8;
+	min-height: 55.95px;
+	position: relative;
+	width: 100%;
+	border-bottom-color: #424242;
+}
+
+.app-name {
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 54px;
+	letter-spacing: -1px;
+	margin-bottom: 0;
+	float: left;
+}
+
+.app-name:visited {
+	color: #424242;
+}
+
+.app-footer {
+	border-top: 1px dashed #e8e8e8;
+	padding: 5px 20px 20px;
+}
+
+table#drones_list {
+	display: none;
+	width: 100%;
+	margin: 20px 0;
+}
+
+table, th, td {
+	border: 1px solid #cdcdcd;
+}
+
+table th {
+	background-color: #e8e8e8;
+}
+
+table th, table td {
+	padding: 5px;
+	text-align: left;
+}
+
+table td {
+	font-size: 90%;
+}
+
+table .drone_id {
+	width: 25%;
+}
+
+table .drone_position {
+	width: auto;
+}
+
+table .drone_speed {
+	width: 20%;
+	text-align: center;
+}
+
+.arrived {
+	background-color: #A4F791;
+}
+
+.updated {
+	background-color: #FFFF99;
+}
+
+.idle {
+	background-color: #FC9F9F;
+}
+
+#drones_legend {
+	display: none;
+	max-width: 300px !important;
+}
+
+#drones_legend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+
+#drones_legend .legend-scale ul {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+
+#drones_legend .legend-scale ul li {
+	font-size: 80%;
+	list-style: none;
+	margin-left: 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+
+#drones_legend ul.legend-labels li span {
+	display: block;
+	float: left;
+	height: 16px;
+	width: 30px;
+	margin-right: 5px;
+	margin-left: 0;
+	border: 1px solid #cdcdcd;
+}
+
+.author-info {
+	font-size: 65%;
+	float: left;
+}
+
+.author-info>a, .author-info>a:visited {
+	color: #424242;
+}
